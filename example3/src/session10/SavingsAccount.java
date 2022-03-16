@@ -23,7 +23,8 @@ public class SavingsAccount extends Account implements iTransasion{
 
         DecimalFormat twoDForm = new DecimalFormat("#.00");
 
-        return new Fomatter().decimalFormat(dailyInterest);
+        return Double.valueOf(twoDForm.format(dailyInterest));
+
     }
 
     @Override
